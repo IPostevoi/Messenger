@@ -20,9 +20,18 @@ function connect() {
     stompClient = Stomp.over(socket);
     stompClient.connect({}, function (frame) {
         console.log('Connected: ' + frame);
-        stompClient.subscribe('/response/login/', function (response) {
-             $('.alert-success').html(JSON.parse(response.body)["content"] + ' hello!');
-            // showResponse(JSON.parse(greeting.body).content)
+        stompClient.subscribe('/user/queue/login/', function (response) {
+             $('.alert-success').html(JSON.parse(response.body)["content"]);
+            if (JSON.parse(response.body)["content"] == "OK") {
+
+                $(".container").html("NEW PAGE");
+                // $.ajax({
+                //     url: '/chat/',
+                //     success: function(){
+                //         alert('Load was performed.');
+                //     }
+                // });
+            }
         });
     });
 }

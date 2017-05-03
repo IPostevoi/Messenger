@@ -1,4 +1,4 @@
-hello/url/LoginController.class
+hello/controller/LoginController.class
 hello/models/User.class
 hello/storageImplementation/UserMapper.class
 hello/interfaces/UserDAO.class

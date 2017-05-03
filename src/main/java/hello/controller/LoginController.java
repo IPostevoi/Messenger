@@ -1,12 +1,14 @@
-package hello.url;
+package hello.controller;
 
 import hello.Message;
 import hello.models.User;
 import hello.Config;
 import org.springframework.messaging.handler.annotation.MessageMapping;
-import org.springframework.messaging.handler.annotation.SendTo;
+import org.springframework.messaging.simp.annotation.SendToUser;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Created by bakla410 on 03.05.17.
@@ -14,22 +16,25 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class LoginController {
 
-    @RequestMapping("/")
+    @RequestMapping(value = "/")
     public String login() {
         return "login_page.html";
     }
 
     @MessageMapping("/validateLogin/")
-    @SendTo("/response/login/")
+    @SendToUser("/queue/login/")
     public Message validate(User user) throws Exception {
-        //Thread.sleep(4000); // simulated delay
-
         boolean ifUser = Config.getStorage().ifExists(user.getUsername());
         if (ifUser) {
-            return new Message("Status: OK, welcome " + user.getUsername());
+            return new Message("OK");
         } else {
-            return new Message("Status: no such user!");
+            return new Message("ERROR");
         }
     }
+
+//    public void sendMessages(Principal principal) {
+//    messagingTemplate
+// .convertAndSendToUser(principal.getName(), "/queue/horray", "Horray, " + principal.getName() + "!");
+//}
 
 }
