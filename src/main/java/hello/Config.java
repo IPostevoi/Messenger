@@ -1,6 +1,6 @@
 package hello;
 
-import hello.storageImplementation.UserJDBC;
+import hello.storage.UserJDBC;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

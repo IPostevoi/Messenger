@@ -1,4 +1,4 @@
-package hello.interfaces;
+package hello.abstracts;
 
 import hello.models.User;
 
@@ -12,7 +12,7 @@ public interface UserDAO {
 
     void setDataSource(DataSource ds);
 
-    void create (String username, String password);
+    void create(String username, String password);
 
     User getUser(String username);
 

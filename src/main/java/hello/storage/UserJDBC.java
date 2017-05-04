@@ -1,9 +1,9 @@
-package hello.storageImplementation;
+package hello.storage;
 
 import java.util.List;
 import javax.sql.DataSource;
 
-import hello.interfaces.UserDAO;
+import hello.abstracts.UserDAO;
 import hello.models.User;
 import org.springframework.jdbc.core.JdbcTemplate;
 /**

@@ -1,4 +1,4 @@
-package hello.storageImplementation;
+package hello.storage;
 
 /**
  * Created by bakla410 on 03.05.17.
