@@ -6,7 +6,7 @@ package hello.models;
 public class Message {
 
     private Long id;
-    private Long senderId;
+    private String senderName;
     private String chat;
     private String type;
     private String content;
@@ -19,12 +19,12 @@ public class Message {
         this.id = id;
     }
 
-    public Long getSenderId() {
-        return senderId;
+    public String getSenderName() {
+        return senderName;
     }
 
-    public void setSenderId(Long senderId) {
-        this.senderId = senderId;
+    public void setsenderName(String senderName) {
+        this.senderName = senderName;
     }
 
     public String getType() {
