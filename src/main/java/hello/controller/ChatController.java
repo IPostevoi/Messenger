@@ -37,8 +37,8 @@ public class ChatController {
 //}
 
 
-    @MessageMapping("/chat")
-    @SendTo("/topic/chat")
+    @MessageMapping("/chat/{id")
+    @SendTo("/topic/chat/{id}")
     public Message send(Message message) throws Exception {
         return message;
 

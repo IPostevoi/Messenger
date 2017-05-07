@@ -8,5 +8,9 @@ import java.util.ArrayList;
 public class Chat {
 
     private String name;
-    private ArrayList<String> usernames;
+    private Integer id;
+
+    public String getName() {
+        return name;
+    }
 }

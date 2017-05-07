@@ -1,4 +1,4 @@
-package hello.authentication;
+package hello.url;
 
 /**
  * Created by bakla410 on 05.05.17.
