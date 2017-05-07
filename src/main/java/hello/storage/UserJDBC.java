@@ -4,23 +4,15 @@ import java.util.List;
 import javax.sql.DataSource;
 
 import hello.abstracts.UserDAO;
+import hello.abstracts.BaseSource;
 import hello.models.User;
 import org.springframework.jdbc.core.JdbcTemplate;
 /**
  * Created by bakla410 on 03.05.17.
  */
-public class UserJDBC implements UserDAO {
+public class UserJDBC extends BaseSource implements UserDAO {
 
-    private DataSource dataSource;
-    private JdbcTemplate jdbcTemplateObject;
-
-    public void setDataSource(DataSource dataSource) {
-        this.dataSource = dataSource;
-        this.jdbcTemplateObject = new JdbcTemplate(dataSource);
-    }
-
-
-    public void create (String username, String password) {
+    public void create(String username, String password) {
         String SQL = "insert into User (username, password) values (?, ?)";
         jdbcTemplateObject.update(SQL, username, password);
         System.out.println("Created Record Name = " + username + " password = " + password);
