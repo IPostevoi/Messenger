@@ -11,8 +11,6 @@ import java.util.List;
  */
 public interface MessageDAO {
 
-    void setDataSource(DataSource ds);
-
     void create(String chat, String content, String type, Long senderId);
 
     User getMessage(String chat, String content, Long senderId);

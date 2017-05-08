@@ -29,7 +29,8 @@
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -39,11 +40,13 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-            <li><form th:action="@{/logout}" method="post">
-                <input th:align="right" type="submit" class="btn btn-default" value="Sign Out"/>
-            </form></li>
-        </ul>
-    </div>
+                <li>
+                    <form th:action="@{/logout}" method="post">
+                        <input th:align="right" type="submit" class="btn btn-default" value="Sign Out"/>
+                    </form>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 
@@ -94,71 +97,69 @@
         </div>
 
         <div class="col-md-8 col-md-pull-4">
-
-            SAMPLE TEXT
-
             <!--<form id="connectForm" class="form-inline">-->
-                <!--<div class="form-group">-->
-                    <!--<label for="connect">Соединение:</label>-->
-                    <!--<button id="connect" class="btn btn-default" type="submit">Connect</button>-->
-                    <!--<button id="disconnect" class="btn btn-default" type="submit" disabled="disabled">Disconnect-->
-                    <!--</button>-->
-                <!--</div>-->
-            <!--</form>-->
-            <!--<form id="addUser" class="form-inline" th:action="@{/chat/addUser}" method="post" >-->
-                <!--<p>Добавить в чат пользователя</p>-->
-                <!--<div class="form-group">-->
-                    <!--<input type="text" id="addUserToChat" class="form-control" name="username" placeholder="Имя пользователя..."/>-->
-                <!--</div>-->
-                    <!--<button class="btn btn-default" type="submit">Добавить</button>-->
-            <!--</form>-->
-            <!--<div th:if="${param.addUser=='error'}">Пользователь не существует</div>-->
-            <!--<div class="panel panel-info" style="padding-bottom: 0">-->
-                <!--<div class="panel-heading">-->
-                    <!--Чат-->
-                <!--</div>-->
-                <!--<div class="panel-body" style="height: 400px; overflow-y: scroll">-->
-                    <!--<p>bla</p>-->
-                    <!--<p>bla</p>-->
-                    <!--<p>bla</p>-->
-                    <!--<p>bla</p>-->
-                    <!--<p>bla</p>-->
-                    <!--<p>bla</p>-->
-                    <!--<p>bla</p>-->
-                    <!--<p>bla</p>-->
-                    <!--<p>bla</p>-->
-                    <!--<p>bla</p>-->
-                    <!--<p>bla</p>-->
-                    <!--<p>bla</p>-->
-                    <!--<p>bla</p>-->
-                    <!--<p>bla</p>-->
-                    <!--<p>bla</p>-->
-                    <!--<p>bla</p>-->
-                    <!--<p>bla</p>-->
-                <!--</div>-->
-                <!--<div class="well" style="margin-bottom: 0">-->
-                    <!--<form id="sendForm" class="form-inline">-->
-                        <!--<div class="form-group">-->
-                            <!--<input type="text" id="message" class="form-control" size="70%" placeholder="Сообщение..."/>-->
-                        <!--</div>-->
-                        <!--<button id="send" class="btn btn-default" type="submit">Отправить</button>-->
-                    <!--</form>-->
-                <!--</div>-->
+            <!--<div class="form-group">-->
+            <!--<label for="connect">Соединение:</label>-->
+            <!--<button id="connect" class="btn btn-default" type="submit">Connect</button>-->
+            <!--<button id="disconnect" class="btn btn-default" type="submit" disabled="disabled">Disconnect-->
+            <!--</button>-->
             <!--</div>-->
+            <!--</form>-->
+            <form id="addUser" class="form-inline" th:action="@{/chat/addUser}" method="post">
+                <p>Добавить в чат пользователя</p>
+                <div class="form-group">
+                    <input type="text" id="addUserToChat" class="form-control" name="username"
+                           placeholder="Имя пользователя..."/>
+                </div>
+                <button class="btn btn-default" type="submit">Добавить</button>
+            </form>
+            <div th:if="${param.addUser=='error'}">Пользователь не существует</div>
+            <div class="panel panel-info" style="padding-bottom: 0">
+                <div class="panel-heading">
+                    Чат
+                </div>
+                <div class="panel-body" style="height: 400px; overflow-y: scroll">
+                    <p>bla</p>
+                    <p>bla</p>
+                    <p>bla</p>
+                    <p>bla</p>
+                    <p>bla</p>
+                    <p>bla</p>
+                    <p>bla</p>
+                    <p>bla</p>
+                    <p>bla</p>
+                    <p>bla</p>
+                    <p>bla</p>
+                    <p>bla</p>
+                    <p>bla</p>
+                    <p>bla</p>
+                    <p>bla</p>
+                    <p>bla</p>
+                    <p>bla</p>
+                </div>
+                <div class="well" style="margin-bottom: 0">
+                    <form id="sendForm" class="form-inline">
+                        <div class="form-group">
+                            <input type="text" id="message" class="form-control" size="70%" placeholder="Сообщение..."/>
+                        </div>
+                        <button id="send" class="btn btn-default" type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
     <!--<div class="row">-->
-        <!--<div class="col-md-12">-->
-            <!--<table id="conversation" class="table table-striped">-->
-                <!--<thead>-->
-                <!--<tr>-->
-                    <!--<th>Conversation</th>-->
-                <!--</tr>-->
-                <!--</thead>-->
-                <!--<tbody id="chat">-->
-                <!--</tbody>-->
-            <!--</table>-->
-        <!--</div>-->
+    <!--<div class="col-md-12">-->
+    <!--<table id="conversation" class="table table-striped">-->
+    <!--<thead>-->
+    <!--<tr>-->
+    <!--<th>Conversation</th>-->
+    <!--</tr>-->
+    <!--</thead>-->
+    <!--<tbody id="chat">-->
+    <!--</tbody>-->
+    <!--</table>-->
+    <!--</div>-->
     <!--</div>-->
 </div>
 </body>

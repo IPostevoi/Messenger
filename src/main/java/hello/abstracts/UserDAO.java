@@ -10,8 +10,6 @@ import javax.sql.DataSource;
  */
 public interface UserDAO {
 
-    void setDataSource(DataSource ds);
-
     void create(String username, String password);
 
     User getUser(String username);

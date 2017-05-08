@@ -13,9 +13,19 @@
         <property name = "password" value = "bakla410"/>
     </bean>
 
-    <!-- Definition for studentJDBCTemplate bean -->
+    <!-- Definition for JDBCTemplate bean -->
     <bean id = "userJDBC"
           class = "hello.storage.UserJDBC">
+        <property name = "dataSource" ref = "dataSource" />
+    </bean>
+
+    <bean id = "chatJDBC"
+          class = "hello.storage.ChatJDBC">
+        <property name = "dataSource" ref = "dataSource" />
+    </bean>
+
+    <bean id = "chatUsersJDBC"
+          class = "hello.storage.ChatUsersJDBC">
         <property name = "dataSource" ref = "dataSource" />
     </bean>
 

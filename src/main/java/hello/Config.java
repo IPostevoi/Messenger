@@ -1,6 +1,8 @@
 package hello;
 
 import hello.storage.UserJDBC;
+import hello.storage.ChatJDBC;
+import hello.storage.ChatUsersJDBC;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -13,8 +15,20 @@ public class Config {
     private static ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
     private  static UserJDBC userJDBC =
             (UserJDBC)context.getBean("userJDBC");
+    private  static ChatJDBC chatJDBC =
+            (ChatJDBC)context.getBean("chatJDBC");
+    private  static ChatUsersJDBC chatUsersJDBC =
+            (ChatUsersJDBC)context.getBean("chatUsersJDBC");
 
-    public static UserJDBC getStorage() {
+    public static UserJDBC getUser() {
         return userJDBC;
+    }
+
+    public static ChatJDBC getChat() {
+        return chatJDBC;
+    }
+
+    public static ChatUsersJDBC getChatUsers() {
+        return chatUsersJDBC;
     }
 }

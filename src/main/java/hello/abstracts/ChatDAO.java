@@ -11,13 +11,11 @@ import java.util.List;
  */
 public interface ChatDAO {
 
-    void setDataSource(DataSource ds);
+    Integer create(String name, String adminName);
 
-    void create(String chat, String content, String type, Long senderId);
+    Chat getChat(Integer chatId);
 
-    User getChat(String chat, String content, Long senderId);
+    List<Chat> listChat(String username);
 
-    List<Chat> listChat(Long senderId);
-
-    boolean ifExists(String chat, String content);
+    boolean ifExists(String name);
 }
