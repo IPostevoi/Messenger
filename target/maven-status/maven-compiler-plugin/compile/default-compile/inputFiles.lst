@@ -13,6 +13,7 @@
 /home/bakla410/Desktop/Messenger/src/main/java/hello/storage/ChatJDBC.java
 /home/bakla410/Desktop/Messenger/src/main/java/hello/abstracts/MessageDAO.java
 /home/bakla410/Desktop/Messenger/src/main/java/hello/controller/SocketController.java
+/home/bakla410/Desktop/Messenger/src/main/java/hello/storage/ChatUsersMapper.java
 /home/bakla410/Desktop/Messenger/src/main/java/hello/controller/ChatController.java
 /home/bakla410/Desktop/Messenger/src/main/java/hello/HelloMessage.java
 /home/bakla410/Desktop/Messenger/src/main/java/hello/authentication/WebSecurityConfig.java

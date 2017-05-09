@@ -40,10 +40,8 @@ public class SocketController {
     @MessageMapping("/chat/{id}")
     @SendTo("/topic/chat/{id}")
     public Message send(Message message) throws Exception {
+        System.out.println("send message: " + message.getContent());
         return message;
 
-
     }
-
-
 }

@@ -68,15 +68,15 @@ function validateInput () {
 //     $( "#send" ).click(function() { sendName(chatName); });
 // });
 
-$( document ).ready(function() {
-
-    connect();
-    $("form").on('submit', function (e) {
-         e.preventDefault();
-     });
-    $( "#send" ).click(function() { validateInput(); });
-
-
-
-});
+// $( document ).ready(function() {
+//
+//     connect();
+//     $("form").on('submit', function (e) {
+//          e.preventDefault();
+//      });
+//     $( "#send" ).click(function() { validateInput(); });
+//
+//
+//
+// });
 

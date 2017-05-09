@@ -13,6 +13,7 @@ hello/models/User.class
 hello/abstracts/UserDAO.class
 hello/storage/ChatJDBC$1.class
 hello/url/MvcConfig.class
+hello/storage/ChatUsersMapper.class
 hello/abstracts/ChatDAO.class
 hello/storage/ChatMapper.class
 hello/HelloMessage.class
