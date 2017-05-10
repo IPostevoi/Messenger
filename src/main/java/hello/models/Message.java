@@ -1,21 +1,25 @@
 package hello.models;
 
+import java.sql.Time;
+import java.sql.Timestamp;
+
 /**
  * Created by bakla410 on 04.05.17.
  */
 public class Message {
 
-    private Long id;
+    private Integer id;
     private String senderName;
-    private String chat;
+    private Integer chatId;
     private String type;
     private String content;
+    private Timestamp time;
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -23,7 +27,7 @@ public class Message {
         return senderName;
     }
 
-    public void setsenderName(String senderName) {
+    public void setSenderName(String senderName) {
         this.senderName = senderName;
     }
 
@@ -43,11 +47,19 @@ public class Message {
         this.content = content;
     }
 
-    public String getChat() {
-        return chat;
+    public Integer getChatId() {
+        return chatId;
     }
 
-    public void setChat(String chat) {
-        this.chat = chat;
+    public void setChatId(Integer chatId) {
+        this.chatId = chatId;
+    }
+
+    public Timestamp getTime() {
+        return time;
+    }
+
+    public void setTime(Timestamp time) {
+        this.time = time;
     }
 }

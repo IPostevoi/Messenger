@@ -11,11 +11,11 @@ import java.util.List;
  */
 public interface MessageDAO {
 
-    void create(String chat, String content, String type, Long senderId);
+    void create(String content, Integer chatId, String senderName);
 
-    User getMessage(String chat, String content, Long senderId);
+    Message getMessage(Integer id);
 
-    List<Message> listMessages(Long senderId);
+//    List<Message> listMessages(Long senderId);
 
-    boolean ifExists(String chat, String content);
+//    boolean ifExists(String chat, String content);
 }

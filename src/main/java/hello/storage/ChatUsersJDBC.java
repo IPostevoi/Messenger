@@ -2,6 +2,7 @@ package hello.storage;
 
 import hello.abstracts.BaseSource;
 import hello.abstracts.ChatUsersDAO;
+import hello.models.Chat;
 import hello.models.User;
 
 import java.util.List;
@@ -11,9 +12,9 @@ import java.util.List;
  */
 public class ChatUsersJDBC extends BaseSource implements ChatUsersDAO {
 
-    public void create(String username, Integer chatId) {
-        String SQL = "insert into ChatUsers (username, chatId) values (?, ?)";
-        jdbcTemplateObject.update(SQL, username, chatId);
+    public void create(String username, String chatName, Integer chatId) {
+        String SQL = "insert into ChatUsers (username, chatId, chatName) values (?, ?, ?)";
+        jdbcTemplateObject.update(SQL, username, chatId, chatName);
         System.out.println("Created Record in ChatUsers username = " + username + " chatId = " + chatId);
     }
 
@@ -25,7 +26,13 @@ public class ChatUsersJDBC extends BaseSource implements ChatUsersDAO {
 
     public List<User> listUsers(Integer chatId) {
         String SQL = "select * from ChatUsers where chatId = ?";
-        List<User> users = jdbcTemplateObject.query(SQL, new Object[]{chatId}, new ChatUsersMapper());
+        List<User> users = jdbcTemplateObject.query(SQL, new Object[]{chatId}, new ChatUsersMapperForUsers());
         return users;
+    }
+
+    public List<Chat> listChats(String username) {
+        String SQL = "select * from ChatUsers where username = ?";
+        List<Chat> chats = jdbcTemplateObject.query(SQL, new Object[]{username}, new ChatUsersMapperForChats());
+        return chats;
     }
 }

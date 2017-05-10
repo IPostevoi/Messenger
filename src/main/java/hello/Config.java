@@ -1,5 +1,6 @@
 package hello;
 
+import hello.storage.MessageJDBC;
 import hello.storage.UserJDBC;
 import hello.storage.ChatJDBC;
 import hello.storage.ChatUsersJDBC;
@@ -19,6 +20,8 @@ public class Config {
             (ChatJDBC)context.getBean("chatJDBC");
     private  static ChatUsersJDBC chatUsersJDBC =
             (ChatUsersJDBC)context.getBean("chatUsersJDBC");
+    private  static MessageJDBC messageJDBC =
+            (MessageJDBC)context.getBean("messageJDBC");
 
     public static UserJDBC getUser() {
         return userJDBC;
@@ -30,5 +33,9 @@ public class Config {
 
     public static ChatUsersJDBC getChatUsers() {
         return chatUsersJDBC;
+    }
+
+    public static MessageJDBC getMessage() {
+        return messageJDBC;
     }
 }

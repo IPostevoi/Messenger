@@ -1,6 +1,7 @@
 package hello.abstracts;
 
 
+import hello.models.Chat;
 import hello.models.User;
 
 import java.util.List;
@@ -10,9 +11,11 @@ import java.util.List;
  */
 public interface ChatUsersDAO {
 
-    void create(String username, Integer chatId);
+    void create(String username, String chatName, Integer chatId);
 
     boolean ifExists(String username, Integer chatId);
 
     List<User> listUsers(Integer chatId);
+
+    List<Chat> listChats(String username);
 }

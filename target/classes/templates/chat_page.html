@@ -37,7 +37,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a id="UserName" class="navbar-brand" th:inline="text">[[${#httpServletRequest.remoteUser}]]</a>
+            <a id="UserName" th:href="@{/user}" class="navbar-brand" th:inline="text">[[${#httpServletRequest.remoteUser}]]</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
@@ -79,17 +79,11 @@
             <!-- Blog Categories Well -->
             <div class="well">
                 <h4>Мои чаты</h4>
-                <div class="row">
+                <div class="row" style="height: 200px; overflow-y: scroll">
                     <div class="col-lg-6">
-                        <ul class="list-unstyled">
+                        <ul class="list-unstyled" th:each="chat: ${userChats}">
                             <li>
-                                <a href="/chat?id=1"> чат1</a>
-                            </li>
-                            <li>
-                                <a href=""> чат2</a>
-                            </li>
-                            <li>
-                                <a href=""> чат3</a>
+                                <a th:href="@{/chat/{chatId}(chatId = ${chat.id})}" th:text="${chat.name}"></a>
                             </li>
                         </ul>
                     </div>
@@ -119,6 +113,8 @@
                 <button class="btn btn-default" type="submit">Добавить</button>
             </form>
             <div th:if="${param.addUserError}">Пользователь не существует</div>
+            <div th:if="${param.userExist}">Пользователь уже добавлен</div>
+            <div th:if="${param.userAdded}">Пользователь успешно добавлен</div>
             <div class="panel panel-info" style="padding-bottom: 0">
                 <div class="panel-heading">
                     Чат
@@ -137,19 +133,6 @@
             </div>
         </div>
     </div>
-    <!--<div class="row">-->
-    <!--<div class="col-md-12">-->
-    <!--<table id="conversation" class="table table-striped">-->
-    <!--<thead>-->
-    <!--<tr>-->
-    <!--<th>Conversation</th>-->
-    <!--</tr>-->
-    <!--</thead>-->
-    <!--<tbody id="chat">-->
-    <!--</tbody>-->
-    <!--</table>-->
-    <!--</div>-->
-    <!--</div>-->
 </div>
 </body>
 </html>

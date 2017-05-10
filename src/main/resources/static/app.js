@@ -23,7 +23,7 @@ function connect() {
         setConnected(true);
         console.log('Connected: ' + frame);
         var msg = stompClient.subscribe('/topic/chat/' + chatId, function (message) {
-            showMessage(JSON.parse(message.body).content)
+            showMessage(JSON.parse(message.body))
         });
     });
 }
@@ -37,11 +37,12 @@ function disconnect() {
 }
 
 function send() {
-    stompClient.send("/app/chat/" + chatId, {}, JSON.stringify({'senderName': username, 'content': $("#message").val()}));
+    stompClient.send("/app/chat/" + chatId, {}, JSON.stringify({'senderName': username,
+        'content': $("#message").val(), 'chatId': chatId}));
 }
 
 function showMessage(message) {
-    $("#chat").append("<tr><td>" + username + ": " + message + "</td></tr>");
+    $("#chat").append("<tr><td>" + message.senderName + "(" + message.time + "): " + message.content + "</td></tr>");
 }
 
 // $(function () {

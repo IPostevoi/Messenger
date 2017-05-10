@@ -29,4 +29,9 @@
         <property name = "dataSource" ref = "dataSource" />
     </bean>
 
+    <bean id = "messageJDBC"
+          class = "hello.storage.MessageJDBC">
+        <property name = "dataSource" ref = "dataSource" />
+    </bean>
+
 </beans>

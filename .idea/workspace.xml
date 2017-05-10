@@ -2,33 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13137f10-5977-45e2-b1fc-8c832984e3a2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hello/storage/ChatUsersMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/access_denied.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/templates/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/templates/login.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/messenger-0.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/messenger-0.1.0.jar.original" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hello/WebSocketConfig.class" afterPath="$PROJECT_DIR$/target/classes/hello/WebSocketConfig.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hello/storage/ChatMessagesMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hello/storage/ChatUsersMapperForChats.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hello/storage/MessageJDBC.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hello/storage/MessageMapper.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/hello/storage/ChatUsersMapper.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/hello/storage/ChatUsersMapper.java" afterPath="$PROJECT_DIR$/src/main/java/hello/storage/ChatUsersMapperForUsers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hello/Config.class" afterPath="$PROJECT_DIR$/target/classes/hello/Config.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hello/abstracts/ChatUsersDAO.class" afterPath="$PROJECT_DIR$/target/classes/hello/abstracts/ChatUsersDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hello/abstracts/MessageDAO.class" afterPath="$PROJECT_DIR$/target/classes/hello/abstracts/MessageDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hello/authentication/WebSecurityConfig.class" afterPath="$PROJECT_DIR$/target/classes/hello/authentication/WebSecurityConfig.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hello/controller/ChatController.class" afterPath="$PROJECT_DIR$/target/classes/hello/controller/ChatController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hello/controller/SocketController.class" afterPath="$PROJECT_DIR$/target/classes/hello/controller/SocketController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hello/models/Message.class" afterPath="$PROJECT_DIR$/target/classes/hello/models/Message.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hello/storage/ChatJDBC$1.class" afterPath="$PROJECT_DIR$/target/classes/hello/storage/ChatJDBC$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hello/storage/ChatJDBC.class" afterPath="$PROJECT_DIR$/target/classes/hello/storage/ChatJDBC.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hello/storage/ChatUsersJDBC.class" afterPath="$PROJECT_DIR$/target/classes/hello/storage/ChatUsersJDBC.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/8b40d45a-e2bb-46ad-a335-7155f76a0703.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/8b40d45a-e2bb-46ad-a335-7155f76a0703.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_thymeleaf_thymeleaf_Release.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_thymeleaf_thymeleaf_Release.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hello/WebSocketConfig.java" afterPath="$PROJECT_DIR$/src/main/java/hello/WebSocketConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hello/Config.java" afterPath="$PROJECT_DIR$/src/main/java/hello/Config.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hello/abstracts/ChatUsersDAO.java" afterPath="$PROJECT_DIR$/src/main/java/hello/abstracts/ChatUsersDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hello/abstracts/MessageDAO.java" afterPath="$PROJECT_DIR$/src/main/java/hello/abstracts/MessageDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hello/controller/ChatController.java" afterPath="$PROJECT_DIR$/src/main/java/hello/controller/ChatController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hello/controller/SocketController.java" afterPath="$PROJECT_DIR$/src/main/java/hello/controller/SocketController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hello/models/Message.java" afterPath="$PROJECT_DIR$/src/main/java/hello/models/Message.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hello/storage/ChatJDBC.java" afterPath="$PROJECT_DIR$/src/main/java/hello/storage/ChatJDBC.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hello/storage/ChatUsersJDBC.java" afterPath="$PROJECT_DIR$/src/main/java/hello/storage/ChatUsersJDBC.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/Beans.xml" afterPath="$PROJECT_DIR$/src/main/resources/Beans.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/app.js" afterPath="$PROJECT_DIR$/src/main/resources/static/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/login.js" afterPath="$PROJECT_DIR$/src/main/resources/static/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/access_denied.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/access_denied.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/chat_page.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/chat_page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/login_page.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/login_page.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/user_page.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/user_page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Beans.xml" afterPath="$PROJECT_DIR$/target/classes/Beans.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/app.js" afterPath="$PROJECT_DIR$/target/classes/static/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/login.js" afterPath="$PROJECT_DIR$/target/classes/static/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/access_denied.html" afterPath="$PROJECT_DIR$/target/classes/templates/access_denied.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/chat_page.html" afterPath="$PROJECT_DIR$/target/classes/templates/chat_page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/login_page.html" afterPath="$PROJECT_DIR$/target/classes/templates/login_page.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/user_page.html" afterPath="$PROJECT_DIR$/target/classes/templates/user_page.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
@@ -72,7 +83,35 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
+        <option name="myItemId" value="Message" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="messenger_db@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
         <option name="myItemId" value="ChatUsers" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="messenger_db@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="ChatMessages" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -97,8 +136,38 @@
       <file leaf-file-name="ChatController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/ChatController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="67" column="5" lean-forward="false" selection-start-line="66" selection-start-column="27" selection-end-line="67" selection-end-column="5" />
+            <state relative-caret-position="414">
+              <caret line="42" column="65" lean-forward="false" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageJDBC.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hello/storage/MessageJDBC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="27" column="38" lean-forward="false" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1494451207047" expanded="true" signature="603:669" ph="insert into Message... " />
+                <marker date="1494451207047" expanded="true" signature="1308:1366" ph="insert into ChatMessages... " />
+                <marker date="1494451207047" expanded="true" signature="1648:1682" ph="select * fro... Messenger" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messenger_db.Message" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/94e69424/8b40d45a-e2bb-46ad-a335-7155f76a0703/messenger_db.Message">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -107,42 +176,74 @@
       <file leaf-file-name="SocketController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/SocketController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="43" column="22" lean-forward="false" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+            <state relative-caret-position="540">
+              <caret line="47" column="35" lean-forward="true" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
               <folding>
-                <element signature="e#632#666#0" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#728#762#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebSecurityConfig.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hello/authentication/WebSecurityConfig.java">
+      <file leaf-file-name="ChatJDBC.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hello/storage/ChatJDBC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="32" column="29" lean-forward="false" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+            <state relative-caret-position="793">
+              <caret line="61" column="9" lean-forward="false" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1494449999693" expanded="true" signature="656:704" ph="insert into Chat... " />
+                <marker date="1494449999693" expanded="true" signature="1633:1664" ph="select * fro... Chat" />
+                <marker date="1494449999693" expanded="true" signature="1883:1897" ph="select * fro... User" />
+                <marker date="1494449999693" expanded="true" signature="1883:1901" ph="select * fro... Chat" />
+                <marker date="1494449999693" expanded="true" signature="1883:1921" ph="select * fro... Chat" />
+                <marker date="1494449999693" expanded="true" signature="2118:2162" ph="select count... chat" />
+                <marker date="1494449999693" expanded="true" signature="2392:2435" ph="select * fro... ChatMessages" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hello/abstracts/MessageDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="13" column="65" lean-forward="false" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chat_page.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/chat_page.html">
+      <file leaf-file-name="Message.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hello/models/Message.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="133" column="38" lean-forward="true" selection-start-line="133" selection-start-column="38" selection-end-line="133" selection-end-column="38" />
+            <state relative-caret-position="46">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MessageMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hello/storage/MessageMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="56" column="6" lean-forward="true" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
+            <state relative-caret-position="360">
+              <caret line="44" column="74" lean-forward="false" selection-start-line="44" selection-start-column="74" selection-end-line="44" selection-end-column="74" />
               <folding>
                 <element signature="n#!!block;n#disconnect#0" expanded="false" />
               </folding>
@@ -150,58 +251,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login_page.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login_page.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="41" column="44" lean-forward="false" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebSocketConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hello/WebSocketConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_page.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user_page.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-990">
-              <caret line="20" column="82" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="82" />
-              <folding>
-                <marker date="1494361138526" expanded="false" signature="6068:6084" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="messenger_db.User_role" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/94e69424/8b40d45a-e2bb-46ad-a335-7155f76a0703/messenger_db.User_role">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
+      <file leaf-file-name="messenger_db.ChatMessages" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/94e69424/8b40d45a-e2bb-46ad-a335-7155f76a0703/messenger_db.ChatMessages">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/login.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -237,11 +296,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/hello/url/ValidateController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/models/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/models/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/models/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/models/UserJDBC.java" />
         <option value="dbtable:/1d773f96/8b40d45a-e2bb-46ad-a335-7155f76a0703/messenger_db.User" />
         <option value="$PROJECT_DIR$/src/main/java/hello/Storage/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/url/HomeController.java" />
@@ -258,36 +312,41 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8b40d45a-e2bb-46ad-a335-7155f76a0703/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/hello/Application.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/login_page.html" />
         <option value="$PROJECT_DIR$/src/main/java/hello/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/models/Message.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/authentication/MvcConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/home.html" />
         <option value="$PROJECT_DIR$/src/main/java/hello/abstracts/BaseSource.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/storage/UserJDBC.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/storage/ChatMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/models/Chat.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/controller/CreateChatController.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/abstracts/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/abstracts/MessageDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/storage/ChatUserJDBC.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/Beans.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/Config.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/abstracts/ChatDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/url/MvcConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/storage/ChatJDBC.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/access_denied.html" />
         <option value="$PROJECT_DIR$/src/main/java/hello/storage/ChatUsersMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/storage/ChatUsersJDBC.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/abstracts/ChatUsersDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/chat_page.html" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/controller/ChatController.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/WebSocketConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/login.js" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/authentication/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/user_page.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/login_page.html" />
+        <option value="dbtable:/94e69424/8b40d45a-e2bb-46ad-a335-7155f76a0703/messenger_db.ChatUsers" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/storage/ChatUsersJDBC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/abstracts/ChatUsersDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/storage/ChatUsersMapperForChats.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/storage/ChatMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/controller/ChatController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/chat_page.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/access_denied.html" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/storage/ChatMessagesMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/storage/ChatJDBC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/abstracts/MessageDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/Beans.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/Config.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/storage/MessageJDBC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/storage/MessageMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/models/Message.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/app.js" />
         <option value="$PROJECT_DIR$/src/main/java/hello/controller/SocketController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/authentication/WebSecurityConfig.java" />
       </list>
     </option>
   </component>
@@ -385,9 +444,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -700,6 +756,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1194,11 +1253,12 @@
       <workItem from="1494311306866" duration="5054000" />
       <workItem from="1494316953065" duration="2157000" />
       <workItem from="1494355051077" duration="7423000" />
+      <workItem from="1494440896792" duration="11407000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98652000" />
+    <option name="totallyTimeSpent" value="110059000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1615" height="1026" extended-state="6" />
@@ -1207,13 +1267,13 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08476737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13129382" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17909497" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24920331" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1221,14 +1281,15 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14331897" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24892241" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21223709" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22498406" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286638" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1238,7 +1299,6 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36068112" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286638" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1258,24 +1318,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/package-info.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/google_checkstyle.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/url/ValidateController.java" />
-    <entry file="dbDummy://dbtable:/1d773f96/8b40d45a-e2bb-46ad-a335-7155f76a0703/messenger_db.User" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/models/Type.java" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8b40d45a-e2bb-46ad-a335-7155f76a0703/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/META-INF/context.xml" />
     <entry file="file://$PROJECT_DIR$/Messenger.iml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1316,63 +1358,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/models/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/models/Chat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-          <folding>
-            <element signature="e#195#196#0" expanded="false" />
-            <element signature="e#222#223#0" expanded="false" />
-            <element signature="e#262#263#0" expanded="false" />
-            <element signature="e#294#295#0" expanded="false" />
-            <element signature="e#324#325#0" expanded="false" />
-            <element signature="e#349#350#0" expanded="false" />
-            <element signature="e#386#387#0" expanded="false" />
-            <element signature="e#414#415#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/94e69424/8b40d45a-e2bb-46ad-a335-7155f76a0703/messenger_db.message">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/HomeController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/abstracts/MessageDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/abstracts/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -1388,22 +1378,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2898">
           <caret line="162" column="12" lean-forward="false" selection-start-line="162" selection-start-column="12" selection-end-line="162" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="20" column="53" lean-forward="false" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#741#742#0" expanded="false" />
-            <element signature="e#772#773#0" expanded="false" />
-            <element signature="e#812#813#0" expanded="false" />
-            <element signature="e#843#844#0" expanded="false" />
-            <element signature="e#893#894#0" expanded="false" />
-            <element signature="e#929#930#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1427,19 +1401,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/94e69424/8b40d45a-e2bb-46ad-a335-7155f76a0703/messenger_db.Chat">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.8.RELEASE/spring-jdbc-4.3.8.RELEASE.jar!/org/springframework/jdbc/core/PreparedStatementCreator.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -1451,45 +1412,171 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/url/MvcConfig.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.8.RELEASE/spring-jdbc-4.3.8.RELEASE.jar!/org/springframework/jdbc/core/RowMapper.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        <state relative-caret-position="90">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/WebSocketConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/access_denied.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        <state relative-caret-position="1476">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/94e69424/8b40d45a-e2bb-46ad-a335-7155f76a0703/messenger_db.ChatUsers">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/authentication/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="32" column="29" lean-forward="false" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/url/MvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <marker date="1494276651019" expanded="false" signature="444:876" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="77" column="73" lean-forward="false" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="73" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="36" column="15" lean-forward="false" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/94e69424/8b40d45a-e2bb-46ad-a335-7155f76a0703/messenger_db.User_role">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/94e69424/8b40d45a-e2bb-46ad-a335-7155f76a0703/messenger_db.ChatUsers">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/models/Chat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding>
+            <element signature="e#324#325#0" expanded="false" />
+            <element signature="e#349#350#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/access_denied.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="55" column="15" lean-forward="false" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/94e69424/8b40d45a-e2bb-46ad-a335-7155f76a0703/messenger_db.User">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/94e69424/8b40d45a-e2bb-46ad-a335-7155f76a0703/messenger_db.message">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/storage/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/models/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/storage/ChatUsersMapperForChats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="44" lean-forward="false" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/storage/UserJDBC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+        <state relative-caret-position="198">
+          <caret line="17" column="92" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="92" />
           <folding>
             <marker date="1494169664187" expanded="true" signature="409:460" ph="insert into User... " />
             <marker date="1494169664187" expanded="true" signature="704:741" ph="select * fro... User" />
@@ -1500,27 +1587,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/storage/ChatJDBC.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/storage/ChatMessagesMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="47" column="4" lean-forward="false" selection-start-line="47" selection-start-column="4" selection-end-line="51" selection-end-column="5" />
+        <state relative-caret-position="360">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1494280183439" expanded="true" signature="627:675" ph="insert into Chat... " />
-            <marker date="1494280183439" expanded="true" signature="1604:1642" ph="select * fro... Chat" />
-            <marker date="1494280183439" expanded="true" signature="1861:1875" ph="select * fro... User" />
-            <marker date="1494280183439" expanded="true" signature="1861:1879" ph="select * fro... Chat" />
-            <marker date="1494280183439" expanded="true" signature="1861:1899" ph="select * fro... Chat" />
-            <marker date="1494280183439" expanded="true" signature="2096:2140" ph="select count... chat" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.8.RELEASE/spring-jdbc-4.3.8.RELEASE.jar!/org/springframework/jdbc/core/RowMapper.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/storage/ChatUsersMapperForUsers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="216">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/storage/ChatUsersJDBC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="65" lean-forward="false" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1494445082958" expanded="true" signature="387:454" ph="insert into ChatUsers... " />
+            <marker date="1494445082958" expanded="true" signature="723:787" ph="select count... ChatUsers" />
+            <marker date="1494445082958" expanded="true" signature="1026:1066" ph="select * fro... Chat" />
+            <marker date="1494445082958" expanded="true" signature="1282:1324" ph="select * fro... ChatUsers" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1532,158 +1629,161 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/storage/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/storage/ChatUsersMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/storage/ChatUsersJDBC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1494357561113" expanded="true" signature="344:398" ph="insert into ChatUsers... " />
-            <marker date="1494357561113" expanded="true" signature="657:721" ph="select count... ChatUsers" />
-            <marker date="1494357561113" expanded="true" signature="960:1000" ph="select * fro... Chat" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/abstracts/ChatUsersDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="39" lean-forward="false" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/models/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="13" column="50" lean-forward="false" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/94e69424/8b40d45a-e2bb-46ad-a335-7155f76a0703/messenger_db.User">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
+    <entry file="dbDummy://dbtable:/94e69424/8b40d45a-e2bb-46ad-a335-7155f76a0703/messenger_db.Chat">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/94e69424/8b40d45a-e2bb-46ad-a335-7155f76a0703/messenger_db.User_role">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/ChatController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="67" column="5" lean-forward="false" selection-start-line="66" selection-start-column="27" selection-end-line="67" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/WebSocketConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="41" column="44" lean-forward="false" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-990">
-          <caret line="20" column="82" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="82" />
-          <folding>
-            <marker date="1494361138526" expanded="false" signature="6068:6084" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/chat_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="133" column="38" lean-forward="true" selection-start-line="133" selection-start-column="38" selection-end-line="133" selection-end-column="38" />
+        <state relative-caret-position="702">
+          <caret line="39" column="45" lean-forward="false" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="29" column="11" lean-forward="true" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/abstracts/MessageDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="13" column="65" lean-forward="false" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/storage/ChatJDBC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="793">
+          <caret line="61" column="9" lean-forward="false" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <marker date="1494449999693" expanded="true" signature="656:704" ph="insert into Chat... " />
+            <marker date="1494449999693" expanded="true" signature="1633:1664" ph="select * fro... Chat" />
+            <marker date="1494449999693" expanded="true" signature="1883:1897" ph="select * fro... User" />
+            <marker date="1494449999693" expanded="true" signature="1883:1901" ph="select * fro... Chat" />
+            <marker date="1494449999693" expanded="true" signature="1883:1921" ph="select * fro... Chat" />
+            <marker date="1494449999693" expanded="true" signature="2118:2162" ph="select count... chat" />
+            <marker date="1494449999693" expanded="true" signature="2392:2435" ph="select * fro... ChatMessages" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/storage/MessageJDBC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" column="38" lean-forward="false" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1494451207047" expanded="true" signature="603:669" ph="insert into Message... " />
+            <marker date="1494451207047" expanded="true" signature="1308:1366" ph="insert into ChatMessages... " />
+            <marker date="1494451207047" expanded="true" signature="1648:1682" ph="select * fro... Messenger" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/storage/MessageMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/94e69424/8b40d45a-e2bb-46ad-a335-7155f76a0703/messenger_db.ChatMessages">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/94e69424/8b40d45a-e2bb-46ad-a335-7155f76a0703/messenger_db.Message">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/models/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/ChatController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="42" column="65" lean-forward="false" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/SocketController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="47" column="35" lean-forward="true" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#728#762#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="56" column="6" lean-forward="true" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
+        <state relative-caret-position="360">
+          <caret line="44" column="74" lean-forward="false" selection-start-line="44" selection-start-column="74" selection-end-line="44" selection-end-column="74" />
           <folding>
             <element signature="n#!!block;n#disconnect#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/controller/SocketController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="43" column="22" lean-forward="false" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
-          <folding>
-            <element signature="e#632#666#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/authentication/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="32" column="29" lean-forward="false" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
