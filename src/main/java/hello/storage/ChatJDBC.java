@@ -59,7 +59,7 @@ public class ChatJDBC extends BaseSource implements ChatDAO {
     }
 
     public List<Message> getMessages(Integer chatId) {
-        String SQL = "select * from Message where chatId = ?";
+        String SQL = "select * from Messages where chatId = ?";
         List<Message> messages = jdbcTemplateObject.query(SQL,
                 new Object[] { chatId }, new ChatMessagesMapper());
         return messages;

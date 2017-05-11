@@ -13,8 +13,10 @@ import org.springframework.jdbc.core.JdbcTemplate;
 public class UserJDBC extends BaseSource implements UserDAO {
 
     public void create(String username, String password) {
-        String SQL = "insert into User (username, password) values (?, ?)";
-        jdbcTemplateObject.update(SQL, username, password);
+        String SQL = "insert into User (username, password, enabled) values (?, ?, ?)";
+        jdbcTemplateObject.update(SQL, username, password, 1);
+        SQL = "insert into UserRole (username, role) values (?, ?);";
+        jdbcTemplateObject.update(SQL, username, "USER");
         System.out.println("Created Record Name = " + username + " password = " + password);
         return;
     }

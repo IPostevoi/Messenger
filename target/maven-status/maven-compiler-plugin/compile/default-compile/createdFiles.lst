@@ -1,8 +1,10 @@
 hello/models/Chat.class
 hello/storage/ChatUsersJDBC.class
 hello/storage/UserJDBC.class
+hello/abstracts/UserDTO.class
 hello/storage/UserMapper.class
 hello/storage/MessageMapper.class
+hello/controller/RegisterController.class
 hello/abstracts/ChatUsersDAO.class
 hello/WebSocketConfig.class
 hello/storage/ChatUsersMapperForChats.class

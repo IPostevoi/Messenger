@@ -17,7 +17,7 @@
     <table id="11" parent="2" name="ChatUsers"/>
     <table id="12" parent="2" name="Message"/>
     <table id="13" parent="2" name="User"/>
-    <table id="14" parent="2" name="User_role"/>
+    <table id="14" parent="2" name="UserRole"/>
     <column id="15" parent="9" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>

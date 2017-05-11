@@ -1,6 +1,7 @@
 /home/bakla410/Desktop/Messenger/src/main/java/hello/abstracts/ChatDAO.java
 /home/bakla410/Desktop/Messenger/src/main/java/hello/storage/ChatMessagesMapper.java
 /home/bakla410/Desktop/Messenger/src/main/java/hello/storage/MessageJDBC.java
+/home/bakla410/Desktop/Messenger/src/main/java/hello/abstracts/UserDTO.java
 /home/bakla410/Desktop/Messenger/src/main/java/hello/models/Chat.java
 /home/bakla410/Desktop/Messenger/src/main/java/hello/models/User.java
 /home/bakla410/Desktop/Messenger/src/main/java/hello/storage/ChatUsersMapperForUsers.java
@@ -18,6 +19,7 @@
 /home/bakla410/Desktop/Messenger/src/main/java/hello/Message.java
 /home/bakla410/Desktop/Messenger/src/main/java/hello/models/Message.java
 /home/bakla410/Desktop/Messenger/src/main/java/hello/storage/ChatMapper.java
+/home/bakla410/Desktop/Messenger/src/main/java/hello/controller/RegisterController.java
 /home/bakla410/Desktop/Messenger/src/main/java/hello/storage/ChatUsersJDBC.java
 /home/bakla410/Desktop/Messenger/src/main/java/hello/storage/UserJDBC.java
 /home/bakla410/Desktop/Messenger/src/main/java/hello/Application.java

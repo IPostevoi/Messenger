@@ -57,7 +57,7 @@
 
     <div class="well" th:fragment="addUserBar">
         <form id="addUser" class="form-inline" th:action="@{/chat/{chatId}/addUser(chatId=${chatId})}" method="post">
-            <p>Добавить в чат  пользователя</p>
+            <h4>Добавить в чат  пользователя</h4>
             <!--<p th:text="${chatId}"></p>-->
             <div class="form-group">
                 <input type="text" id="addUserToChat" class="form-control" name="username"

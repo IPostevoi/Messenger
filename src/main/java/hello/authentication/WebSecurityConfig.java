@@ -21,7 +21,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                .antMatchers("/", "/home", "/webjars/**", "/static/**").permitAll()
+                .antMatchers("/", "/home", "/register", "/webjars/**", "/static/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
@@ -42,7 +42,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .jdbcAuthentication().dataSource(dataSource).usersByUsernameQuery(
                 "select username, password, enabled from User where username=?")
                 .authoritiesByUsernameQuery(
-                        "select username, role from User_role where username=?");
+                        "select username, role from UserRole where username=?");
 
     }
 }
