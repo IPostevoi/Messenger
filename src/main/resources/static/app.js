@@ -39,10 +39,11 @@ function disconnect() {
 function send() {
     stompClient.send("/app/chat/" + chatId, {}, JSON.stringify({'senderName': username,
         'content': $("#message").val(), 'chatId': chatId}));
+    $("#message").val("");
 }
 
 function showMessage(message) {
-    $("#chat").append("<tr><td>" + message.senderName + "(" + message.time + "): " + message.content + "</td></tr>");
+    $("#chat").append("<tr><td>" + message.senderName + ": " + message.content + "</td></tr>");
 }
 
 // $(function () {

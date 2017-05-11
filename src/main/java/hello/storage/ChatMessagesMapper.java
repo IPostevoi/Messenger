@@ -14,7 +14,10 @@ public class ChatMessagesMapper implements RowMapper<Message> {
     public Message mapRow(ResultSet rs, int rowNum) throws SQLException {
         Message message = new Message();
         message.setChatId(rs.getInt("chatId"));
-        message.setId(rs.getInt("messageId"));
+        message.setId(rs.getInt("id"));
+        message.setContent(rs.getString("content"));
+        message.setTime(rs.getTimestamp("time"));
+        message.setSenderName(rs.getString("senderName"));
         return message;
     }
 }

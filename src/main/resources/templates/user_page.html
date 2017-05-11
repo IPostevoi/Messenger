@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
-    <title>Hello WebSocket</title>
+    <title>Messenger</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
@@ -25,67 +25,15 @@
     enabled. Please enable
     Javascript and reload this page!</h2></noscript>
 
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a id="UserName" class="navbar-brand" th:inline="text">[[${#httpServletRequest.remoteUser}]]</a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-            <li><form th:action="@{/logout}" method="post">
-                <input th:align="right" type="submit" class="btn btn-default" value="Sign Out"/>
-            </form></li>
-        </ul>
-    </div>
-    </div>
-</nav>
+<div th:replace="navbar :: navbar"></div>
 
 <div id="main-content" class="container">
 
     <div class="row">
 
         <div class="col-md-4 col-md-push-8" id="menubar">
-
-            <div class="well">
-                <h4>Создать чат</h4>
-                <form id="createChat" class="form-inline" th:action="@{/chat/create}" method="post">
-                    <div class="form-group">
-                        <input type="text" id="chatName" name="chat" class="form-control"
-                               placeholder="Название чата..."/>
-                    </div>
-                    <button class="btn btn-default" type="submit">Создать</button>
-                </form>
-            </div>
-
-            <!-- Blog Search Well -->
-            <div class="well">
-                <h4>Форма для поиска</h4>
-                <form type="GET" action="">
-                    <button type="submit">Жмак</button>
-                </form>
-            </div>
-
-            <!-- Blog Categories Well -->
-            <div class="well">
-                <h4>Мои чаты</h4>
-                <div class="row" style="height: 200px; overflow-y: scroll">
-                    <div class="col-lg-6">
-                        <ul class="list-unstyled" th:each="chat: ${userChats}">
-                            <li>
-                                <a th:href="@{/chat/{chatId}(chatId = ${chat.id})}" th:text="${chat.name}"></a>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <div th:replace="menubar :: createChatBar"></div>
+            <div th:replace="menubar :: myChatBar"></div>
         </div>
 
         <div class="col-md-8 col-md-pull-4">

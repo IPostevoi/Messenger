@@ -2,6 +2,7 @@ package hello.controller;
 
 import hello.models.Chat;
 import hello.Config;
+import hello.models.Message;
 import hello.models.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -60,6 +61,8 @@ public class ChatController {
             mav.addObject("userChats", chats);
             List<User> users = Config.getChatUsers().listUsers(chatId);
             mav.addObject("chatUsers", users);
+            List<Message> chatMessages  = Config.getChat().getMessages(chatId);
+            mav.addObject("chatMessages", chatMessages);
             return mav;
         } else {
             return new ModelAndView("access_denied");
